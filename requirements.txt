@@ -22,13 +22,9 @@ resampy==0.4.2
 scikit-learn
 scipy
 seaborn==0.12.1
-SimpleWebSocketServer==0.1.1
-soundfile==0.12.1
 sympy==1.10.1
-tensorboard
-tensorboard-data-server==0.7.0
-tensorboard-plugin-wit==1.8.1
 tensorflow
+tensorflow-cpu
 tensorflow-estimator==2.12.0
 tensorflow-intel
 tensorflow-io-gcs-filesystem==0.31.0
