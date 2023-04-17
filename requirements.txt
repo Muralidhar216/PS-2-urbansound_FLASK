@@ -82,7 +82,7 @@ resampy==0.4.2
 rfc3986==2.0.0
 rich==12.5.1
 rsa==4.9
-scikit-learn==1.2.2
+scikit-learn
 scipy==1.8.1
 seaborn==0.12.1
 SimpleWebSocketServer==0.1.1
