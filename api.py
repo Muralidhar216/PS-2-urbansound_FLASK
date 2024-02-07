@@ -34,37 +34,3 @@ def predict():
 if __name__ == '__main__':
     app.run(debug=True)
 
-
-
-"""# Example code for setting up a Flask API for audio classification
-from flask import Flask, request, jsonify
-from tensorflow import keras
-import librosa
-import numpy as np
-
-app = Flask(__name__)
-
-# Define the endpoint for audio file classification
-@app.route('/classify_audio', methods=['POST'])
-def classify_audio():
-    # Retrieve uploaded audio file from Flutter
-    audio_file = request.files['audio'].read()
-
-    # Load the trained deep learning model
-    model = keras.models.load_model('audio_model.h5')
-
-    # Preprocess the audio file
-    # For example, you can use librosa library to convert the audio file to spectrogram
-    spectrogram = librosa.stft(np.frombuffer(audio_file, dtype=np.int16))
-
-    # Make predictions
-    predictions = model.predict(spectrogram)
-
-    # Format and send response back to Flutter
-    response = {'predictions': predictions.tolist()}
-    return jsonify(response)
-
-if __name__ == '__main__':
-    app.run(debug=True)
-
-"""
